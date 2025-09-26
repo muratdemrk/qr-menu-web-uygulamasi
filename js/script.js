@@ -3,11 +3,14 @@ let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
 
-    if (window.scrollY > lastScrollY) {
-        // Sayfa aşağı kaydırılıyor
+    if (window.scrollY <= 0) {
+        // En üste gelindiyse her zaman göster
+        header.classList.remove("hide");
+    } else if (window.scrollY > lastScrollY) {
+        // Aşağı kaydırılıyorsa gizle
         header.classList.add("hide");
     } else {
-        // Sayfa yukarı kaydırılıyor
+        // Yukarı kaydırılıyorsa göster
         header.classList.remove("hide");
     }
 
