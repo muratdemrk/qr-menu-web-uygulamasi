@@ -250,3 +250,31 @@ section{
     margin-bottom: 2rem;
     color: var(--text-color); /* senin tema rengine uyar */
 }
+/* QR Kod Bölümü */
+.qr-section {
+    text-align: center;
+    margin: 5rem auto 3rem auto;
+    padding: 2rem;
+}
+
+.qr-container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.qr-container p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.qr-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
