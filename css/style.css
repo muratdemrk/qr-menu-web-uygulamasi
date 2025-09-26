@@ -12,9 +12,9 @@
     font-family: 'Poppins',sans-serif;
 }
 :root{
-    --bg-color:#02ff4e;
-    --second-bg-color:#00A9C1;
-    --text-color:#ededed;
+    --bg-color:#cf810c;
+    --second-bg-color:#ffffff;
+    --text-color:#000000;
     --main-color:#cf810c;
 }
 html{
@@ -250,31 +250,42 @@ section{
     margin-bottom: 2rem;
     color: var(--text-color); /* senin tema rengine uyar */
 }
-/* QR Kod Bölümü */
+
 .qr-section {
     text-align: center;
-    margin: 5rem auto 3rem auto;
-    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 
+.qr-container h3, 
 .qr-container h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-color);
+    color: rgb(0, 0, 0);
 }
 
 .qr-container p {
     font-size: 1.4rem;
-    margin-bottom: 2rem;
-    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    color: rgb(0, 0, 0);
 }
 
 .qr-img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    background: white;
-    padding: 8px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgb(255, 255, 255); /* QR daha net gözüksün */
+    padding: 1px; /* QR ile kenar arasında boşluk */
+}
+
+/* Hover efekti */
+.qr-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px #cf810c;
 }
