@@ -104,8 +104,8 @@ section{
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;    
-    width: 100%; /* Kartın genişliği ayarlandı */
-    height: 20rem; /* Yüksekliği resme göre otomatik olarak ayarlanacak */
+    width: 100%; 
+    height: 20rem; 
 }
 
 .card-box img{
@@ -126,41 +126,41 @@ section{
     left: 1rem;          
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.5); /* Şeffaf bir arka plan */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 0.5rem;
     border-radius: 0.5rem;
-    z-index: 2;          /* Diğer elementlerin üstünde olmasını sağlar */
+    z-index: 2;          
 }
 
-/* Kart hover edildiğinde sol alttaki yazıyı gizler */
+
 .card-box:hover .bottom-left {
     display: none;
 }
 
-/* Ortadaki yazı sadece hover sırasında görünür */
+
 .card-layer h4 {
     font-size: 3rem;
     color: white;
-    display: none; /* Varsayılan olarak gizli */
+    display: none;
 }
 
 
-/*Denemelik bitiş*/
+
 .card-box a {
     text-decoration: none;
     color: white;   
-    position: relative;     /* İçindeki öğelerin yerleşimi için */
-    display: block;         /* A etiketi tam alanı kaplayacak */
+    position: relative;   
+    display: block;         
 }
 
 .card-box a:hover h4 {
     color: #ffffff;
 }
 
-/* Mobil cihazlar (max-width: 768px) */
+
 @media (max-width: 768px) {
     .card-container {
-        grid-template-columns: 1fr; /* Mobilde tek sütun */
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
@@ -173,10 +173,10 @@ section{
     }   
 }
 
-/* Tabletler (min-width: 768px ve max-width: 1024px) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .card-container {
-        grid-template-columns: repeat(2, 1fr); /* Tabletlerde iki sütun */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 2rem;
     }
 
@@ -190,10 +190,10 @@ section{
     
 }
 
-/* Laptoplar ve masaüstü cihazlar (min-width: 1024px) */
+
 @media (min-width: 1024px) {
     .card-container {
-        grid-template-columns: repeat(3, 1fr); /* Masaüstünde üç sütun */
+        grid-template-columns: repeat(3, 1fr); 
         gap: 2.5rem;
     }
 
@@ -207,28 +207,28 @@ section{
    
 }
 
-/* Hamburger ikonu başlangıçta gizli */
+
 #menu-icon {
     display: none;    
     font-size: 3.6rem;
     cursor: pointer;
 }
 
-/* Ekran genişliği 600px ve altına düştüğünde */
+
 @media (max-width: 600px) {
     .navbar {
-        display: none; /* Menü gizlenir */
-        flex-direction: column; /* Açılınca dikey görünsün */
+        display: none; 
+        flex-direction: column; 
     }
     
     #menu-icon {
-        display: block; /* Hamburger ikonu göster */
+        display: block; 
     }
     
     .navbar.active {
-        display: flex; /* İkon tıklanınca menü görünür hale gelir */
+        display: flex; 
         position: absolute;
-        top: 100%; /* Üst menünün hemen altına gelir */
+        top: 100%; 
         left: 0;
         background-color: white;
         width: 100%;
@@ -279,11 +279,10 @@ section{
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: rgb(255, 255, 255); /* QR daha net gözüksün */
-    padding: 1px; /* QR ile kenar arasında boşluk */
+    background-color: rgb(255, 255, 255); 
+    padding: 1px; 
 }
 
-/* Hover efekti */
 .qr-img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 50px #cf810c;
