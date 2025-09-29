@@ -41,7 +41,7 @@ body{
     transition: top 0.3s ease;
 }
 .header.hide {
-    top: -100px; /* Yukarı kaydırarak gizler */
+    top: -100px; 
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -82,7 +82,7 @@ section{
     padding: 10rem 9% 2rem;
 }
 
-/*card*/
+
 
 .card{
     background: var(--second-bg-color);
@@ -119,12 +119,11 @@ section{
     transform: scale(1.1);
 }
 
-/*Denemelik*/
-/* Sol alt köşedeki yazıyı sabitler, her zaman görünür */
+
 .card-box h4.bottom-left {
-    position: absolute;  /* Konumu sabitler */
-    bottom: 1rem;        /* Alt kenardan uzaklık */
-    left: 1rem;          /* Sol kenardan uzaklık */
+    position: absolute;  
+    bottom: 1rem;      
+    left: 1rem;          
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.5); /* Şeffaf bir arka plan */
@@ -248,7 +247,7 @@ section{
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--text-color); /* senin tema rengine uyar */
+    color: var(--text-color); 
 }
 
 .qr-section {
